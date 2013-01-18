@@ -1,1 +1,1 @@
-### Comparision OpenStreetMap vs TIGER 2012<
+### Comparision OpenStreetMap vs TIGER 2012

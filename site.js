@@ -11,6 +11,8 @@ var map = mapbox.map('map'),
  map.ui.hash.add();
  map.ui.attribution.add()
       .content('<a href="http://mapbox.com/about/maps">Terms &amp; Feedback</a>'); 
+ map.ui.zoomer.add();
+ map.ui.zoombox.add();
  show();
 function show(){
   var l_parent = map.getLayerAt(1).parent,
