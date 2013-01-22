@@ -147,17 +147,6 @@ a.button:active {
   -webkit-box-shadow:0 2px 6px rgba(0,0,0,0.25);
   box-shadow:0 2px 6px rgba(0,0,0,0.25);
   }
-.icon {
-  background:transparent url(img/sprite.png) no-repeat 0 0;
-  display:inline-block;
-  text-indent:-999em;
-  width:20px;
-  height:20px;
-  }
-.icon.mapbox {
-  width:120px;
-  height:40px;
-  }
 /* Map
 ---------------------------------------------*/
 .map-container {
@@ -268,7 +257,7 @@ a.button:active {
 #about p{
   margin-top: 10px;
   line-height: 25px;
-  font-size: 16px;
+  font-size: 17px;
 }
 /*-----------------------------------
   Slider
@@ -297,7 +286,7 @@ a.button:active {
 
 .hanle_img{
   position: relative;
-  top: 52%;
+  top: 57%;
   background: #FFFFFF url(img/sprite.png) no-repeat 7px -100px;
   margin: auto;
   padding-left: 2px;

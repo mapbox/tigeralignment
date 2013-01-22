@@ -65,7 +65,7 @@ $(document).ready(function(){
     openIn('p');
     });
     $('#virginia').click(function (e){
-        map.ease.location({ lat: 38.5608, lon: -78.3018  }).zoom(8).optimal();
+        map.ease.location({ lat: 38.000, lon: -78.203  }).zoom(8).optimal();
         return false;
     });
     $('#colorado').click(function (e){
