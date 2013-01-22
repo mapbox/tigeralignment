@@ -165,7 +165,7 @@ a.button:active {
   height:480px;
   }
 #map {
-  background:#f3f3f3;
+  background:#162017;
   height:100%;
   position:absolute;
   top:0;
@@ -236,6 +236,9 @@ a.button:active {
   bottom: 30px;
   width: 100px;
   padding: 7px 30px 7px 30px;
+  border-radius:3px; 
+  -moz-border-radius:3px; 
+  -webkit-border-radius:3px;
 }
 /*-----------------------------------
   About

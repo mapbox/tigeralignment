@@ -7,9 +7,9 @@ map.zoom(12).center({ lat: 37.4504, lon: -77.5858 });
 map.setZoomRange(3, 15);
 map.ui.hash.add();
 map.ui.attribution.add()
-      .content('<a href="http://mapbox.com/about/maps">Terms &amp; Feedback</a>'); 
+      .content('<a href="http://mapbox.com/about/maps">Satellite imagery provided by MapBox </a> | <a href="http://www.openstreetmap.org">Road data ©OpenStreetMap contributors</a>'); 
 map.ui.zoomer.add();
-map.ui.zoombox.add();
+map.ui.zoombox.add();//Satellite imagery provided by MapBox | 
 show();
 
 function show(){
