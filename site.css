@@ -97,7 +97,7 @@ a {
 a.button:hover {
   background-color: #E7E7E7;
   }
-a.button:active {
+a.active {
   background-color: #CCCCCC;
   }
 .seccion1{

@@ -65,10 +65,14 @@ $(document).ready(function(){
     openIn('p');
     });
     $('#virginia').click(function (e){
+        $('#colorado').removeClass('active');
+        $('#virginia').addClass('active');
         map.ease.location({ lat: 38.000, lon: -78.203  }).zoom(8).optimal();
         return false;
     });
     $('#colorado').click(function (e){
+        $('#virginia').removeClass('active');
+        $('#colorado').addClass('active');
         map.ease.location({ lat: 39.177, lon: -106.386}).zoom(8).optimal();
         return false;
     });
