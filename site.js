@@ -72,5 +72,18 @@ $(document).ready(function(){
     $('#colorado').click(function (e){
         map.ease.location({ lat: 39.177, lon: -106.386}).zoom(8).optimal();
         return false;
-    });    
+    });
+
+    $('a[href="#about"]').click(function (e) {
+        $('#backdrop').fadeIn(200);
+        $('#about, #close').show();
+        return false;
+    });
+
+    $('#close').click(function (e) {
+        $('#backdrop').fadeOut(200);
+        $('#about, #howto, #close').hide();
+        return false;
+    });
+
 });   

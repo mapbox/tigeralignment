@@ -204,17 +204,22 @@ background-color: #CCCCCC;
   overflow:auto;
   display:none;
   position:fixed;
-  top:40px;
+  top:90px;
   left:0;
   right:0;
   z-index:5000;
-  width:500px;
+  width:650px;
+  height: 250px;
   margin:0 auto;
-  padding:20px;
-  -webkit-box-shadow:0 0 10px rgba(0,0,0,0.8);
-          box-shadow:0 0 10px rgba(0,0,0,0.8);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-radius:20px; 
+  -moz-border-radius:20px; 
+  -webkit-border-radius:20px;
   }
-
+/*
 #close {
   background:#303030;
   color:#fff;
@@ -229,7 +234,7 @@ background-color: #CCCCCC;
   font-size:22px;
   border-radius:50%;
   display:none;
-  }
+  }*/
 
 #backdrop {
   background:#404040;
@@ -274,17 +279,47 @@ background-color: #CCCCCC;
     border-radius:50%;
     }
 
+.seccion3{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 30px;
+  width: 100px;
+  padding: 7px 30px 7px 30px;
+}
+
 /*-----------------------------------
   About
 -------------------------------------*/
 .about{
   background: transparent url(img/sprite.png) no-repeat 0px 0px;
+  display: block;
   position: relative;
   top: -55px;
   left: 490px;
   width: 20px;
   height: 20px;
   z-index: 2;
+}
+
+.about_header{
+  background: url(img/sprite.png) no-repeat 0px 0px;
+  display: block;
+  position: relative;
+  z-index: 54;
+  padding-left: 30px;
+  height: 30px;
+  line-height: 30px;  
+}
+#about h2{
+  line-height: 18px;
+} 
+#about p{
+  margin-top: 10px;
+  line-height: 25px;
+  font-size: 16px;
 }
 
 /*-----------------------------------
@@ -315,7 +350,7 @@ background-color: #CCCCCC;
 
   .hanle_img{
     position: relative;
-    top: 50%;
+    top: 52%;
     background: #FFFFFF url(img/sprite.png) no-repeat 7px -100px;
     margin: auto;
     padding-left: 2px;
@@ -339,8 +374,6 @@ background-color: #CCCCCC;
   width: 110px;
   height: 60px; 
   z-index: 16;
-
-
 }
 
 .seccion2{
