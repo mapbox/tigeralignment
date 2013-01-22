@@ -1,19 +1,17 @@
 var map = mapbox.map('map'),
-      layers = document.getElementById('layers');
- 
-  var d = new Date();
- 
- map.addLayer(mapbox.layer().id('ruben.map-jy3krua7').composite(false));
- map.addLayer(mapbox.layer().id('ruben.map-qbwgfdgj').composite(false));
+layers = document.getElementById('layers'); 
+map.addLayer(mapbox.layer().id('ruben.map-jy3krua7').composite(false));
+map.addLayer(mapbox.layer().id('ruben.map-qbwgfdgj').composite(false));
      
- map.zoom(12).center({ lat: 37.4504, lon: -77.5858 });
- map.setZoomRange(3, 15);
- map.ui.hash.add();
- map.ui.attribution.add()
+map.zoom(12).center({ lat: 37.4504, lon: -77.5858 });
+map.setZoomRange(3, 15);
+map.ui.hash.add();
+map.ui.attribution.add()
       .content('<a href="http://mapbox.com/about/maps">Terms &amp; Feedback</a>'); 
- map.ui.zoomer.add();
- map.ui.zoombox.add();
- show();
+map.ui.zoomer.add();
+map.ui.zoombox.add();
+show();
+
 function show(){
   var l_parent = map.getLayerAt(1).parent,
       handle = document.getElementById('handle'),
@@ -58,6 +56,7 @@ function openIn(editor) {
       setTimeout("p", 4000)
    }
 }; 
+
 $(document).ready(function(){
     $('#josm').click(function (e){
     openIn('j');
@@ -82,7 +81,7 @@ $(document).ready(function(){
 
     $('#close').click(function (e) {
         $('#backdrop').fadeOut(200);
-        $('#about, #howto, #close').hide();
+        $('#about, #close').hide();
         return false;
     });
 
