@@ -27,8 +27,8 @@ function show(){
   }
   function setDivide(x) {
       x = Math.max(0, Math.min(x, map.dimensions.x));
-      handle.style.left = (x- 40) + 'px';
-      l_parent.style.clip = 'rect(0px ' + x + 'px 9999999px 0px)';
+      handle.style.left = (x) + 'px';
+      l_parent.style.clip = 'rect(3px ' + x + 'px 9999999px 3px)';
   }
   setDivide(700);
 };
