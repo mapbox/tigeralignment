@@ -4,9 +4,9 @@ var map = mapbox.map('map'),
   var d = new Date();
  
  map.addLayer(mapbox.layer().id('ruben.map-jy3krua7').composite(false));
- map.addLayer(mapbox.layer().id('ruben.map-lrxoq95j').composite(false));
+ map.addLayer(mapbox.layer().id('ruben.map-qbwgfdgj').composite(false));
      
- map.zoom(7).center({ lat: 38.861, lon: -105.875 });
+ map.zoom(12).center({ lat: 37.4504, lon: -77.5858 });
  map.setZoomRange(3, 15);
  map.ui.hash.add();
  map.ui.attribution.add()
@@ -65,4 +65,12 @@ $(document).ready(function(){
     $('#potlatch').click(function (e){
     openIn('p');
     });
+    $('#virginia').click(function (e){
+        map.ease.location({ lat: 38.5608, lon: -78.3018  }).zoom(8).optimal();
+        return false;
+    });
+    $('#colorado').click(function (e){
+        map.ease.location({ lat: 39.177, lon: -106.386}).zoom(8).optimal();
+        return false;
+    });    
 });   
