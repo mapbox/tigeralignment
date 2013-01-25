@@ -90,7 +90,7 @@ a {
   position:relative;
   text-align:center;
   text-decoration:none;
-  border:1px solid #BBBBBB;
+  border:1px solid #CCCCCC;
  
   }
 
@@ -257,7 +257,7 @@ a.active {
 #about p{
   margin-top: 10px;
   line-height: 25px;
-  font-size: 17px;
+  font-size: 15px;
 }
 /*-----------------------------------
   Slider
