@@ -1,7 +1,6 @@
 var map = mapbox.map('map'),
 layers = document.getElementById('layers'); 
 map.addLayer(mapbox.layer().id('ruben.map-jy3krua7').composite(false));
-map.addLayer(mapbox.layer().id('ruben.map-wygnf11q').composite(false));
 map.addLayer(mapbox.layer().id('ruben.map-yucwdjcm').composite(false));     
 map.zoom(12).center({ lat: 37.4504, lon: -77.5858 });
 map.setZoomRange(3, 15);
@@ -11,9 +10,8 @@ map.ui.attribution.add()
 map.ui.zoomer.add();
 map.ui.zoombox.add();
 show();
-
 function show(){
-  var l_parent = map.getLayerAt(2).parent,
+  var l_parent = map.getLayerAt(1).parent,
       handle = document.getElementById('handle'),
       dragging = false;
  
@@ -93,9 +91,7 @@ else if (map.zoom()>=14 && map.zoom()<15)
 else if (map.zoom()>=15)
 {map.getLayerAt(0).parent.style.opacity = 1;}
 
-
 map.addCallback("zoomed", function(map, zoomOffset) {
-
 if (map.zoom()>=3 && map.zoom()<4) {
   map.getLayerAt(0).parent.style.opacity = 0.1;}
 
@@ -132,9 +128,6 @@ else if (map.zoom()>=14 && map.zoom()<15)
 else if (map.zoom()>=15)
 {map.getLayerAt(0).parent.style.opacity = 1;}
 });
-
-
-
 $(document).ready(function(){
 
     $('#josm').click(function (e){
@@ -155,17 +148,14 @@ $(document).ready(function(){
         map.ease.location({ lat: 39.177, lon: -106.386}).zoom(8).optimal();
         return false;
     });
-
     $('a[href="#about"]').click(function (e) {
         $('#backdrop').fadeIn(200);
         $('#about, #close').show();
         return false;
     });
-
     $('#close').click(function (e) {
         $('#backdrop').fadeOut(200);
         $('#about, #close').hide();
         return false;
     });
-
 });   
