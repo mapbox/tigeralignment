@@ -3,7 +3,7 @@ layers = document.getElementById('layers');
 map.addLayer(mapbox.layer().id('ruben.map-jy3krua7').composite(false));
 map.addLayer(mapbox.layer().id('ruben.map-yucwdjcm').composite(false));     
 map.zoom(12).center({ lat: 37.4504, lon: -77.5858 });
-map.setZoomRange(3, 15);
+map.setZoomRange(3, 17);
 map.ui.hash.add();
 map.ui.attribution.add()
       .content('<a href="http://mapbox.com/about/maps">Satellite imagery provided by MapBox </a> | <a href="http://www.openstreetmap.org">Road data ©OpenStreetMap contributors</a>'); 
