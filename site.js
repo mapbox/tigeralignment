@@ -34,7 +34,7 @@ function openIn(editor) {
         alert("zoom in a little so we don't have to load a huge area from the API.");
         return false;
     };
- 
+    //alert((map.getExtent()+'').split(',')); 
     var locations =(map.getExtent()+'').split(',');
     if(editor == 'j'){    
     var JOSMurl = "http://127.0.0.1:8111/load_and_zoom?left=" + locations[1] + "&right=" + locations[3] + "&top=" + locations[0] + "&bottom=" + locations[2];
@@ -46,6 +46,7 @@ function openIn(editor) {
             } else {
               setTimeout("j", 4000);
             }
+            marcar(locations);
       }
     });  
 }else if (editor == 'p') { 
@@ -128,8 +129,34 @@ else if (map.zoom()>=14 && map.zoom()<15)
 else if (map.zoom()>=15)
 {map.getLayerAt(0).parent.style.opacity = 1;}
 });
-$(document).ready(function(){
 
+
+function marcar(location){
+
+var lat=(parseFloat(location[0])+parseFloat(location[2]))/2;
+var lon=(parseFloat(location[1])+parseFloat(location[3]))/2;
+
+var features = [];
+var feature = {
+      geometry: {
+      type: 'Point',
+      coordinates: [lon, lat]
+      },
+      properties: {
+          'marker-color': '#000',
+          'marker-symbol': 'star-stroked',
+          title: 'YOU ARE WORKING HERE'       
+       }
+  };
+//console.log(feature);
+  features.push(feature);
+  var markerLayer = mapbox.markers.layer().features(features);
+  var  interaction = mapbox.markers.interaction(markerLayer);
+  map.addLayer(markerLayer);
+  map.draw();
+};
+
+$(document).ready(function(){
     $('#josm').click(function (e){
     openIn('j');
     });
