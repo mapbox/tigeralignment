@@ -34,7 +34,7 @@ function openIn(editor) {
         alert("zoom in a little so we don't have to load a huge area from the API.");
         return false;
     };
-    //alert((map.getExtent()+'').split(',')); 
+    var mapzoom=map.getZoom();
     var locations =(map.getExtent()+'').split(',');
     if(editor == 'j'){    
     var JOSMurl = "http://127.0.0.1:8111/load_and_zoom?left=" + locations[1] + "&right=" + locations[3] + "&top=" + locations[0] + "&bottom=" + locations[2];
@@ -53,7 +53,12 @@ function openIn(editor) {
     var PotlatchURL = 'http://www.openstreetmap.org/edit?editor=potlatch2&bbox='+ locations[1] +',' + locations[2] +',' + locations[3] +',' + locations[0];
     window.open(PotlatchURL);
       setTimeout("p", 4000)
-   }
+   }else if (editor == 'i') { 
+    var ideditorURL = 'http://geowiki.com/iD/#layer=Bing&map='+mapzoom +'/'+( parseFloat(locations[2]) + parseFloat(locations[0]))/2+'/'+(parseFloat(locations[1]) +parseFloat(locations[3]))/2 ;
+    window.open(ideditorURL);
+      setTimeout("i", 4000)
+}
+
 }; 
 
 if (map.zoom()>=3 && map.zoom()<4) {
@@ -163,12 +168,21 @@ $(document).ready(function(){
     $('#potlatch').click(function (e){
     openIn('p');
     });
+    $('#ideditor').click(function (e){
+    openIn('i');
+    });
     $('#virginia').click(function (e){
         $('#colorado').removeClass('active');
         $('#virginia').addClass('active');
         map.ease.location({ lat: 38.000, lon: -78.203  }).zoom(8).optimal();
         return false;
     });
+    $('#virginia').click(function (e){
+        $('#colorado').removeClass('active');
+        $('#virginia').addClass('active');
+        map.ease.location({ lat: 38.000, lon: -78.203  }).zoom(8).optimal();
+        return false;
+    });    
     $('#colorado').click(function (e){
         $('#virginia').removeClass('active');
         $('#colorado').addClass('active');
