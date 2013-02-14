@@ -1,1 +1,1 @@
-### Comparision OpenStreetMap vs TIGER 2012 using TIOword Maps
+### Comparision OpenStreetMap vs TIGER 2012 using TIOword Map
