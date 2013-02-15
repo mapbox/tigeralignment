@@ -3,10 +3,10 @@ layers = document.getElementById('layers');
 
 var layer_ito = new MM.Layer(new MM.MapProvider(function(coord) {
     var img = parseInt(coord.zoom) +'/'+  parseInt(coord.column) +'/'+ parseInt(coord.row)+ '.png';
-    return  "http://t0.beta.itoworld.com/264/5cd685f319f89bbf721f7690297d3a68/"+img,
-            "http://t1.beta.itoworld.com/264/5cd685f319f89bbf721f7690297d3a68/"+img,
-            "http://t2.beta.itoworld.com/264/5cd685f319f89bbf721f7690297d3a68/"+img,
-            "http://t3.beta.itoworld.com/264/5cd685f319f89bbf721f7690297d3a68/"+img;
+    return  "http://t0.beta.itoworld.com/264/8b57d2d14e4e5b6f31fc15746320b221/"+img,
+            "http://t1.beta.itoworld.com/264/8b57d2d14e4e5b6f31fc15746320b221/"+img,
+            "http://t2.beta.itoworld.com/264/8b57d2d14e4e5b6f31fc15746320b221/"+img,
+            "http://t3.beta.itoworld.com/264/8b57d2d14e4e5b6f31fc15746320b221/"+img;
   }));
 
 map.addLayer(mapbox.layer().id('ruben.map-jy3krua7').composite(false));
