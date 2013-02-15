@@ -63,15 +63,17 @@ a {
 #header h1 {
   font-size:20px;
   line-height:40px;
+ 
   }
   #header h1 a {
     color:#000;
     }
 .header_description{
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 100px;
   float: left;
   width: auto;
+  color: #666;
   }
 .content_butons{
     float: right;
@@ -81,7 +83,7 @@ a {
   }
 .button {  
   width:auto;
-  color:#4B4B4B;
+  color:#BBBBBB;
   cursor:pointer;
   display:inline-block;
   font-size:14px;
@@ -95,7 +97,8 @@ a {
   }
 
 a.button:hover {
-  background-color: #E7E7E7;
+  background-color: #FFFFFF;
+  color: #000;
   }
 a.active {
   background-color: #CCCCCC;
@@ -108,8 +111,9 @@ a.active {
   -moz-border-radius:3px; 
   -webkit-border-radius:3px;
 }
-.brand_osm { color:#587EFF; }
-.brand_tiger { color:#FF6DF6; }
+.brand_osm { color:#FFFFFF; }
+.brand_osm2 { color:#01E301; }
+.brand_tiger { color:#D906E6; }
 .subtitle {  color:#818181;  }
 /* ------------------------------------------
   Layout
@@ -135,11 +139,12 @@ a.active {
   Style
 ---------------------------------------------*/
 #masthead {
-  background:#FFFFFF;
+  background:#000;
   width:100%;
   overflow:hidden;
   position:relative;
   z-index:100;
+  opacity: 0.9;
   }
 #masthead {
   position:relative;
@@ -317,26 +322,17 @@ a.active {
   text-align: center;
   line-height: 28px;
 }
-#virginia, .zoomin{
--webkit-border-top-left-radius: 3px;
--webkit-border-top-right-radius: 3px;
--moz-border-radius-topleft: 3px;
--moz-border-radius-topright: 3px;
-border-top-left-radius: 3px;
-border-top-right-radius: 3px;
-border-bottom-right-radius: 0px;
-border-bottom-left-radius: 0px;
 
-}
-#colorado,.zoomout{
--webkit-border-bottom-right-radius: 3px;
--webkit-border-bottom-left-radius: 3px;
--moz-border-radius-bottomright: 3px;
--moz-border-radius-bottomleft: 3px;
-border-bottom-right-radius: 3px;
-border-bottom-left-radius: 3px;
-border-top-left-radius: 0px;
-border-top-right-radius: 0px;
+#logoito{
+  position: absolute;
+  display: block;
+  left: 10px;
+  top: 5px;
+  background: url(img/ito_blue_white.png) no-repeat;
+  width: 100px;
+  height: 60px;
+  z-index: 99;
+
 }
 /*-----------------------------------
   Lil Helpers
