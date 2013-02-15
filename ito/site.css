@@ -70,7 +70,7 @@ a {
     }
 .header_description{
   margin-top: 5px;
-  margin-left: 100px;
+  margin-left: 20px;
   float: left;
   width: auto;
   color: #666;
@@ -326,12 +326,18 @@ a.active {
 #logoito{
   position: absolute;
   display: block;
-  left: 10px;
-  top: 5px;
-  background: url(img/ito_blue_white.png) no-repeat;
+  padding: 5px;
+  bottom: 5px;
+  right: 5px;
+  background: #000000 url(img/ito_blue_white.png) no-repeat;
+  background-position: center;
   width: 100px;
   height: 60px;
   z-index: 99;
+  opacity: 0.9;
+    border-radius:5px; 
+  -moz-border-radius:5px; 
+  -webkit-border-radius:5px;
 
 }
 /*-----------------------------------
