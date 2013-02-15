@@ -9,19 +9,7 @@ var layer_ito = new MM.Layer(new MM.MapProvider(function(coord) {
             "http://t3.beta.itoworld.com/264/5cd685f319f89bbf721f7690297d3a68/"+img;
   }));
 
-/*var layer_ito_satelite = new MM.Layer(new MM.MapProvider(function(coord) {
-    var img = parseInt(coord.zoom) +'/'+  parseInt(coord.column) +'/'+ parseInt(coord.row)+ '.jpeg';
-    return  "http://ecn.t2.tiles.virtualearth.net/tiles/"+img,
-            "http://ecn.t2.tiles.virtualearth.net/tiles/"+img,
-            "http://ecn.t2.tiles.virtualearth.net/tiles/"+img,
-            "http://ecn.t2.tiles.virtualearth.net/tiles/"+img;
-  }));*/
-
-
-
 map.addLayer(mapbox.layer().id('ruben.map-jy3krua7').composite(false));
-//map.addLayer(mapbox.layer().id('ruben.map-yucwdjcm').composite(false)); 
-//map.addLayer(layer_ito_satelite); 
 map.addLayer(layer_ito); 
 
 map.zoom(12).center({ lat: 37.4504, lon: -77.5858 });
@@ -51,7 +39,6 @@ function show(){
   setDivide(700);
 };
  
-
 function openIn(editor) {
     if (map.getZoom() < 14){
         alert("zoom in a little so we don't have to load a huge area from the API.");
