@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>OpenStreetMap vs TIGER 2012</title>
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
+    <link href='site.css' rel='stylesheet' />
+  </head>
+  <body>
+     <div id='masthead'>      
+          <div id='header'>
+          <div class='header_description'>
+            <h1><span class='brand_osm'>OpenStreetMap<span></span></span> vs <span class='brand_tiger'> TIGER 2012</span> Road Alignment US</h1> 
+            <span class='subtitle'>Compare OpenStreetMap with TIGER 2012. Zoom in add Click 'edit' to improve the map.</span>
+            <a class='about' href='#about'></a>
+          </div> 
+      </div>
+      <div class="content_butons">
+        <a id='ideditor' title='' class='button seccion1'>Edit in iD </a>
+        <a id='potlatch' title='' class='button seccion1'>Edit in Potlatch</a>
+        <a id='josm' title='' class='button seccion1'>Edit in JOSM</a>
+      </div>
+    </div>
+    <div id='swipe'>
+        <div id='handle'><div class="hanle_img"></div></div>
+    </div>    
+    <div id='map'></div>
+
+    <div id='backdrop'></div>
+    <div id='about' class='popover'>
+      <div class='about_header'><h2>About</h2></div> 
+      <p>Many roads in the OpenstreetMap US map are based on an  import of TIGER 07 data. TIGER 12 brought geographically much more accurately aligned roads. </br>
+      Compare OpenstreetMap in blue with TIGER 12 data in magenta, zoom to an area and click 'edit' to improve the map.</p>
+      <a id='close' align="center" href='#close' class='button seccion3'>Close</a>
+     </div>
+    <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.js'></script>
+    <script src='ext/jquery.min.js'></script>
+    <script src='ext/underscore.min.js'></script>
+    <script src='site.js'></script>
+  </body>
+</html>

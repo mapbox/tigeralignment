@@ -111,9 +111,8 @@ a.active {
   -moz-border-radius:3px; 
   -webkit-border-radius:3px;
 }
-.brand_osm { color:#FFFFFF; }
-.brand_osm2 { color:#01E301; }
-.brand_tiger { color:#D906E6; }
+.brand_osm { color:#ED100C; }
+.brand_tiger { color:#06FF06; }
 .subtitle {  color:#818181;  }
 /* ------------------------------------------
   Layout
@@ -323,22 +322,7 @@ a.active {
   line-height: 28px;
 }
 
-#logoito{
-  position: absolute;
-  display: block;
-  padding: 5px;
-  bottom: 5px;
-  right: 5px;
-  background: #000000 url(img/ito_blue_white.png) no-repeat;
-  background-position: center;
-  width: 100px;
-  height: 60px;
-  z-index: 99;
-  opacity: 0.9;
-    border-radius:5px; 
-  -moz-border-radius:5px; 
-  -webkit-border-radius:5px;
-}
+
 /*-----------------------------------
   Lil Helpers
 -------------------------------------*/
