@@ -65,7 +65,7 @@ function openIn(editor) {
     window.open(PotlatchURL);
       setTimeout("p", 4000)
    }else if (editor == 'i') { 
-    var ideditorURL = 'http://geowiki.com/iD/#layer=Bing&map='+mapzoom +'/'+( parseFloat(locations[2]) + parseFloat(locations[0]))/2+'/'+(parseFloat(locations[1]) +parseFloat(locations[3]))/2 ;
+    var ideditorURL = 'http://geowiki.com/iD/#layer=Bing&map='+mapzoom +'/'+( parseFloat(locations[1]) + parseFloat(locations[3]))/2+'/'+(parseFloat(locations[2]) +parseFloat(locations[0]))/2 ;
     window.open(ideditorURL);
       setTimeout("i", 4000)
 }
